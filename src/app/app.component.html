@@ -1,0 +1,7 @@
+<button type="button" (click)="isShowEditor = !isShowEditor">
+  Toggle editor
+</button>
+<ng-container *ngIf="isShowEditor">
+  <ckeditor class="editor" [editor]="editor" [formControl]="control"></ckeditor>
+</ng-container>
+
